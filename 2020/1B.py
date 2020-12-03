@@ -1,6 +1,6 @@
 import itertools as it
 
-f = open('Input/1A.txt')
+f = open('Input/1.txt')
 nums = [int(num) for num in f.read().splitlines()]
 
 for (i, j, k) in it.combinations(nums, 3):

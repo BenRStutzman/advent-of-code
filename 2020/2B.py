@@ -1,4 +1,4 @@
-f = open('Input/2A.txt')
+f = open('Input/2.txt')
 lines = [line.split() for line in f.read().splitlines()]
 validPasswords = 0
 
