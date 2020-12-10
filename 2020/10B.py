@@ -5,9 +5,9 @@ joltages = [0] + sorted([int(num) for num in f.read().splitlines()])
 ways_to_get_tos = [1]
 
 for index, joltage in enumerate(joltages[1:]):
-    real_index = index + 1
+    cur_index = index + 1
     ways_to_get_to = 0
-    for lower_index in range(max(0, real_index - 3), real_index):
+    for lower_index in range(max(0, cur_index - 3), cur_index):
         if joltage - joltages[lower_index] <= 3:
             ways_to_get_to += ways_to_get_tos[lower_index]
     ways_to_get_tos.append(ways_to_get_to)
