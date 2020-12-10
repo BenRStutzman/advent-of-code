@@ -1,7 +1,6 @@
 f = open('Input/10.txt')
 
-joltages = sorted([int(num) for num in f.read().splitlines()])
-joltages = [0] + joltages
+joltages = [0] + sorted([int(num) for num in f.read().splitlines()])
 
 ways_to_get_tos = [1]
 
